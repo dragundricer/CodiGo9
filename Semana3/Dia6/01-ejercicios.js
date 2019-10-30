@@ -52,21 +52,43 @@ else{
 // color que hay en existencia. Desarrolle un algoritmo para determinar
 // esto y represéntelo mediante el diagrama de flujo, el pseudocódigo
 // y el diagrama N/S, utilizando el ciclo apropiado.
-var cantidad_total = +prompt("Ingrese la cantidad del lote");
+// var cantidad_total = +prompt("Ingrese la cantidad del lote");
+// var rojo=0,verde=0,blanco=0;
+// for(let foco=1; foco<=cantidad_total; foco++){
+//     var color = prompt(`El foco ${foco} es: 1. verde, 2. blanco, 3. rojo`);
+//     if(color==1){
+//         verde=verde+1 // verde++;
+//     }
+//     if(color==2){
+//         blanco++;
+//     }
+//     if(color==3){
+//         rojo++;
+//     }
+//     else{
+//         console.log("El valor ingresado no es correcto")
+//     }
+// }
+// console.log(`El lote con ${cantidad_total} focos, tiene ${verde} focos verdes, ${blanco} focos blancos y ${rojo} focos rojos`)
+
+
+var cantidad=+prompt("ingresa la cantidad del lote");
+var x=0;
 var rojo=0,verde=0,blanco=0;
-for(let foco=1; foco<=cantidad_total; foco++){
-    var color = prompt(`El foco ${foco} es: 1. verde, 2. blanco, 3. rojo`);
+do{
+     var color = +prompt(`El foco es: 1. verde, 2. blanco, 3. rojo`);
     if(color==1){
         verde=verde+1 // verde++;
     }
-    if(color==2){
-        blanco++;
-    }
-    if(color==3){
+    if(color==2){        
+         blanco++;  
+    }   
+   if(color==3){
         rojo++;
     }
-    else{
-        console.log("El valor ingresado no es correcto")
+    else{        
+         console.log("El valor ingresado no es correcto");
     }
-}
-console.log(`El lote con ${cantidad_total} focos, tiene ${verde} focos verdes, ${blanco} focos blancos y ${rojo} focos rojos`)
+    x++;
+}while(x<cantidad);
+console.log(`El lote con ${cantidad} focos, tiene ${verde} focos verdes, ${blanco} focos blancos y ${rojo} focos rojos`)

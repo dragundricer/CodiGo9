@@ -1,39 +1,39 @@
-// Existen dos formas de definir variables
-// var => que la variable va a poder ser utilizada en todo el codigo
-// let => que la variable solo va a existir dentro de el bloque de codigo
-if (x = 0) {
-    let variable = 20;
+// // Existen dos formas de definir variables
+// // var => que la variable va a poder ser utilizada en todo el codigo
+// // let => que la variable solo va a existir dentro de el bloque de codigo
+// if (x = 0) {
+//     let variable = 20;
 
-}
-// la variable no va a ser reconocida
-// variable
+// }
+// // la variable no va a ser reconocida
+// // variable
 
-var nombres = ['Eduardo', 'Ronald', 'Javier', 'Rodrigo', 'Marco'];
-var edad = [18, 25, 30, 27, 29, 30]
-/*
-console.log(nombres);
-// propiedades de los arreglos
-console.log(nombres.length);
-for (let posicion = 0; posicion < nombres.length; posicion++) {
-    console.log(nombres[posicion]);
-}
-for (let posicion = 0; posicion < edad.length; posicion++) {
-    console.log(edad[posicion]);
-}
+// var nombres = ['Eduardo', 'Ronald', 'Javier', 'Rodrigo', 'Marco'];
+// var edad = [18, 25, 30, 27, 29, 30]
+// /*
+// console.log(nombres);
+// // propiedades de los arreglos
+// console.log(nombres.length);
+// for (let posicion = 0; posicion < nombres.length; posicion++) {
+//     console.log(nombres[posicion]);
+// }
+// for (let posicion = 0; posicion < edad.length; posicion++) {
+//     console.log(edad[posicion]);
+// }
 
-var numeros = [1, 2, 3, 4, 5, 6, 7, 8]
-for (posicion = 0; posicion < numeros.length; posicion++) {
-    console.log(numeros[posicion]);
-    if (numeros[posicion] % 2 == 0) {
-        console.log("Es par");
-    }
-    if (numeros[posicion] % 2 != 0) {
-        console.log("Es impar");
-    }
-}
-*/
+// var numeros = [1, 2, 3, 4, 5, 6, 7, 8]
+// for (posicion = 0; posicion < numeros.length; posicion++) {
+//     console.log(numeros[posicion]);
+//     if (numeros[posicion] % 2 == 0) {
+//         console.log("Es par");
+//     }
+//     if (numeros[posicion] % 2 != 0) {
+//         console.log("Es impar");
+//     }
+// }
+// */
 
-var edades = [20, 15, 25, 30, 40, 18];
+// var edades = [20, 15, 25, 30, 40, 18];
 // quiero saber cuantos son mayores de edad
 // y cuantos son menores de edad
 /*
@@ -59,22 +59,18 @@ y ${menores} menores de edad`);
 // console.log("asdasdasd",mayores);
 // console.log(`texto ${mayores}`); // Alt+96
 
-/*
+
 var arreglo = [1,"Eduardo",19.00,true,[1,2,3]]
 
-var simpson = [
-    [1,2,3],
-    [4,5,6],
-    [7,8,9],
-    [10,11,12,13,14,15]
-]
+var edades = [    25,      30,        40,        18];
+var simpson = [ 'pepe' , [4,5,6] , [7,8,9] , [10,11,12,13,14,15]  ]
 for(let temporada = 0 ; temporada< simpson.length; temporada++){
     console.log(`Temporada ${temporada}`);
     for(let episodio = 0; episodio<simpson[temporada].length; episodio++){
         console.log(`Episodio ${simpson[temporada][episodio]}`);
     }
 }
-*/
+
 /*
 var miarreglo = [
     [1, 2, 3],
