@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'
+        integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
+    <!-- FONT AWESOME 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+        integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+    <!-- FONT AWESOME 4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <!-- WAVES .CSS -->
+    <link rel="stylesheet" href="./waves/waves.min.css">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+        integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
+    <style>
+        .btn:focus {
+            /* outline: none; */
+            box-shadow: none;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="row mt-5 animated fadeInLeft">
+            <div class="col-md-6">
+                <h3><code>class="btn"</code></h3>
+                <h5>
+                    Todos los botones de Bootstrap
+                    deben llevar la clase btn como mínimo
+                </h5>
+                <button class="btn">
+                    Click Aquí
+                </button>
+
+            </div>
+            <div class="col-md-6">
+                <h3><code>class="btn btn-primary"</code></h3>
+                <h5>
+                    Se puede colocar la clase btn-[color]
+                    para colorear los botones de Bootstrap
+                </h5>
+                <button class="btn btn-primary">
+                    Botón primario
+                </button>
+                <button class="btn btn-secondary">
+                    Botón secundario
+                </button>
+                <button class="btn btn-warning">
+                    Botón warning
+                </button>
+                <button class="btn btn-dark">
+                    Botón dark
+                </button>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <h2><code>class="btn btn-block"</code></h2>
+                <h5>
+                    <code>btn-block</code> hace que el boton tenga
+                    un ancho del 100% del su contenedor
+                </h5>
+                <button class="btn btn-danger btn-block">
+                    Boton block danger
+                </button>
+                <button class="btn btn-info btn-block">
+                    Boton block info
+                </button>
+            </div>
+            <div class="col-md-6">
+                <h2>
+                    <code>class="btn-sm" </code>
+                    <code>class="btn-lg" </code>
+                </h2>
+                <h5>
+                    <code>btn-sm</code> reduce el tamño del
+                    boton a un botón más compacto. <br>
+                    <code>btn-lg</code> amplía el tamño del
+                    boton a un botón más grande.
+                </h5>
+                <button class="btn btn-primary btn-sm">
+                    Botón small
+                </button>
+                <button class="btn btn-primary btn-lg">
+                    Botón large
+                </button>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12">
+                <button class="btn btn-block btn-dark" id="btnGuardar">
+                    <i class="fas fa-save mr-2" id="icoGuardar"></i>
+                    Guardar Cambios
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'
+        integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo'
+        crossorigin='anonymous'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'
+        integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1'
+        crossorigin='anonymous'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'
+        integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM'
+        crossorigin='anonymous'></script>
+    <script src="./waves/waves.min.js"></script>
+    <script>
+        let btnGuardar = document.getElementById("btnGuardar");
+        let icoGuardar = document.getElementById("icoGuardar");
+
+        btnGuardar.onclick = () => {
+            btnGuardar.setAttribute("disabled", "disabled");
+            icoGuardar.setAttribute("class", "fas fa-refresh mr-2 fa-spin");
+            setTimeout(() => {
+                btnGuardar.removeAttribute("disabled");
+                icoGuardar.setAttribute("class", "fas fa-save mr-2");
+            }, 2000);
+        }
+
+        Waves.attach('.btn', ['waves-float']);
+        Waves.init();
+    </script>
+</body>
+
+</html>
