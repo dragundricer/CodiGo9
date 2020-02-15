@@ -1,0 +1,45 @@
+//crear el package.json para un proyecto
+npm init
+
+//instalamos los paquetes basicos de webpack
+npm install -D webpack
+npm install webpack-cli
+
+//probamos webpack
+npx webpack --entry ./index.js --output ./build.js
+
+//ya con el archivo de configuracion
+npx webpack
+
+//loaders
+npm install -D css-loader
+npm install -D style-loader
+
+//plugins
+//html
+npm install -D html-webpack-plugin
+
+//cli
+npm install -D webpack-dev-server
+
+//babel|
+
+npm install -D @babel/core babel-loader @babel/preset-env
+
+//pARA ASYNC/AWAIT
+npm install -D @babel/plugin-transform-runtime
+npm install @babel/runtime
+
+//para que babel pueda utilizar JSX
+npm install -D @babel/preset-react
+
+//INSTALACIÓN DE REACT 
+npm install react react-dom
+
+//instalar bootstrap
+npm install bootstrap
+npm install jquery popper.js
+
+
+
+
